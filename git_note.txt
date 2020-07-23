@@ -1,0 +1,29 @@
+
+
+git  note： 
+
+
+1，git 使用  
+/***
+参考该博客 ：https://www.cnblogs.com/duanming/p/11830251.html
+
+
+***/
+	我们在工作或者学习过程中 ，想使用git 仓库代码或者把自己平时笔记上传到git 仓库上 。参考如下步骤 ：
+	1， 注册GitHub 账户 ： 我的账号为： lc0105 
+	2,  创建SSH key 。windows + R 同时，打开cmd 窗口 ， 输入.进去目录 。
+	3， 输入 ssh-keygen -t rsa -C "1521722392@qq.com" 【引号内是自己的gitHub账户】 得到私钥和公钥后， 私钥不可泄露 。
+	
+	4，添加一个远程库 
+	
+	
+	5， 本地克隆远程创建的仓库 
+		git clone https://github.com/lc0105/lanchen.git  这个是我自己创建的一个仓库
+		
+	6，可以用git pull 同步本地仓库 ，用git push 上传本地更新的内容 
+		注意如何去掉每次git push 时 ，需要输入用户名和密码 ：
+		可以使用如下解决方法 ：
+		git config credential.helper store 
+		git push   https://github.com/lc0105/lanchen.git
+		然后输入用户名和密码确认即可 
+		具体可参考文档 ： https://my.oschina.net/u/4438370/blog/4415023
